@@ -1,0 +1,202 @@
+/**
+ * FGO Module CSS
+ */
+
+/* Module wrapper */
+.fgo-module-wrapper {
+    padding: 15px;
+}
+
+/* Navigation improvements */
+.fgo-nav {
+    margin-bottom: 25px;
+}
+
+.fgo-nav > li > a {
+    padding: 12px 20px;
+}
+
+.fgo-nav > li > a i {
+    margin-right: 5px;
+}
+
+/* Cards/Panels */
+.fgo-stat-card {
+    background: #fff;
+    border-radius: 4px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12);
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+    transition: transform 0.2s;
+}
+
+.fgo-stat-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 6px rgba(0,0,0,0.12);
+}
+
+.fgo-stat-card h3 {
+    margin: 10px 0;
+    font-size: 32px;
+    font-weight: 300;
+}
+
+.fgo-stat-card p {
+    margin: 0;
+    color: #666;
+}
+
+/* Status badges */
+.fgo-status {
+    display: inline-block;
+    padding: 4px 12px;
+    border-radius: 12px;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.fgo-status-success {
+    background: #d4edda;
+    color: #155724;
+}
+
+.fgo-status-error {
+    background: #f8d7da;
+    color: #721c24;
+}
+
+.fgo-status-pending {
+    background: #fff3cd;
+    color: #856404;
+}
+
+.fgo-status-processing {
+    background: #d1ecf1;
+    color: #0c5460;
+}
+
+/* Tables */
+.fgo-table {
+    background: #fff;
+    border-radius: 4px;
+    overflow: hidden;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12);
+}
+
+.fgo-table th {
+    background: #f8f9fa;
+    font-weight: 600;
+    border-bottom: 2px solid #dee2e6;
+}
+
+/* Action buttons */
+.fgo-actions {
+    white-space: nowrap;
+}
+
+.fgo-actions .btn {
+    margin: 0 2px;
+}
+
+/* Filters */
+.fgo-filters {
+    background: #f8f9fa;
+    padding: 15px;
+    border-radius: 4px;
+    margin-bottom: 20px;
+}
+
+.fgo-filters .form-group {
+    margin-right: 15px;
+}
+
+/* Charts container */
+.fgo-chart-container {
+    background: #fff;
+    padding: 20px;
+    border-radius: 4px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12);
+    margin-bottom: 20px;
+}
+
+/* Alert improvements */
+.fgo-alert {
+    border-radius: 4px;
+    border-left-width: 4px;
+}
+
+/* Loading spinner */
+.fgo-loading {
+    text-align: center;
+    padding: 40px;
+}
+
+.fgo-loading i {
+    font-size: 48px;
+    color: #007cba;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+/* Modal improvements */
+.fgo-modal .modal-header {
+    background: #f8f9fa;
+    border-bottom: 1px solid #dee2e6;
+}
+
+.fgo-modal .modal-footer {
+    background: #f8f9fa;
+    border-top: 1px solid #dee2e6;
+}
+
+/* Code preview */
+.fgo-code-preview {
+    background: #f8f9fa;
+    border: 1px solid #dee2e6;
+    border-radius: 4px;
+    padding: 15px;
+    font-family: 'Courier New', monospace;
+    font-size: 13px;
+    max-height: 400px;
+    overflow-y: auto;
+}
+
+/* Progress bar */
+.fgo-progress {
+    height: 20px;
+    background: #e9ecef;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.fgo-progress-bar {
+    height: 100%;
+    background: #007cba;
+    transition: width 0.3s;
+    text-align: center;
+    line-height: 20px;
+    color: #fff;
+    font-size: 12px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .fgo-nav > li {
+        display: block;
+        width: 100%;
+    }
+    
+    .fgo-filters .form-group {
+        display: block;
+        margin-bottom: 10px;
+    }
+    
+    .fgo-stat-card {
+        margin-bottom: 15px;
+    }
+}
